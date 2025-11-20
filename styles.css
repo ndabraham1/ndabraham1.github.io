@@ -52,3 +52,7 @@ border-radius: 25%;
   text-align: center;
   margin: 15px;
 }
+
+.height {
+  vertical-align: top;
+}
