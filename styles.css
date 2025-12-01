@@ -1,58 +1,109 @@
+/* GLOBAL STYLING */
 body {
-background: teal;
-font-family: Arial, Helvetica, sans-serif;
+  background: #0B1A2A;  /* dark navy */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
+/* MAIN TITLE */
 h1 {
-color: whitesmoke;
-text-align: center;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
 }
-.projects { display:flex; }
-.project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: white;
-border-radius: 25%;
+
+/* SECTION TITLES */
+h2 {
+  color: white;
+  text-align: left;
+  margin-left: 20px;
 }
+
+/* ABOUT ME + OTHER TEXT BOXES */
+.About, .Skills, .Contact {
+  margin: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+}
+
+/* LINKS (make readable on dark bg) */
+a {
+  color: #8AC9FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #C6E6FF;
+  text-decoration: underline;
+}
+
+/* PROJECT GRID */
 .projects {
-  /* make the blobs float side-by-side */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.projects h2 {
-  /* display the h2 on its own line, not with the section blobs */
-  width: 100%;
-}
+
+/* INDIVIDUAL PROJECT CARDS */
 .project {
-  /* form the section blobs */
   width: 30%;
   margin: 10px;
   padding: 20px 10px;
-  background: rgb(255, 255, 255);
-  /* rounded corners for the blobs */
-  border-radius: 25%;
+  background: white;
+  color: black; /* text stays readable on white cards */
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s ease-in-out;
 }
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.4);
+}
+
+/* PROJECT HEADERS */
 .project h3 {
-  /* pull the h3 text away from the left blob wall */
   margin-left: 50px;
+  color: #0B1A2A;
 }
+
+/* PROJECT IMAGES */
 .project img {
-  /* adjust your image sizes as needed */
   width: 400px;
   height: 300px;
   margin: 10px auto;
   border: 2px solid navy;
   display: block;
-  /* center the images inside the blobs */
-  text-align: center;
-}
-.project p {
-  /* center the p text in the blob */
-  text-align: center;
-  margin: 15px;
 }
 
-.height {
+/* PROJECT PARAGRAPHS */
+.project p {
+  text-align: center;
+  margin: 15px;
+  color: #0B1A2A;
+}
+
+/* RESUME PAGE TABLE FORMATTING */
+table {
+  width: 90%;
+  margin: 20px auto;
+  color: white;
+}
+
+td {
   vertical-align: top;
+  padding: 10px;
+}
+
+hr {
+  border-color: white;
+}
+
+/* Resume section header text */
+h2 {
+  color: #DDEAFF;
 }
